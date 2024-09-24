@@ -7,25 +7,25 @@ class Element:
         self.metadata = metadata
 
 
-class Title(Element):
+class TitleElement(Element):
     pass
 
 
-class Text(Element):
+class TextElement(Element):
     pass
 
 
-class List(Element):
+class ListElement(Element):
     def __init__(self, items: list, metadata: Metadata):
         super().__init__(content=items, metadata=metadata)
 
 
-class Table(Element):
+class TableElement(Element):
     def __init__(self, data: list, metadata: Metadata):
         super().__init__(content=data, metadata=metadata)
 
 
-class Link(Element):
+class LinkElement(Element):
     def __init__(self, text: str, href: str, metadata: Metadata):
         super().__init__(content=text, metadata=metadata)
         self.href = href

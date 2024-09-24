@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Complex Sample HTML Document</title>
+    <meta name="description" content="A complex HTML document to test parser functionalities.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Inline CSS -->
+    <style>
+        .highlight { background-color: yellow; }
+    </style>
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+    <!-- Inline JavaScript -->
+    <script>
+        console.log('Inline script execution');
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Main Title of the Document</h1>
+        <nav>
+            <ul>
+                <li><a href="#section1">Section 1</a></li>
+                <li><a href="#section2">Section 2</a></li>
+                <li><a href="#table-section">Tables</a></li>
+                <li><a href="#form-section">Forms</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Article Section -->
+    <article id="section1">
+        <h2>Section 1: Introduction</h2>
+        <p>This is a <strong>strongly emphasized</strong> paragraph with some <em>italicized text</em> and an <a href="https://example.com" target="_blank">external link</a>.</p>
+        <p>Here's a paragraph with an image:</p>
+        <figure>
+            <img src="image1.jpg" alt="Sample Image" width="200" height="150">
+            <figcaption>Figure 1: A sample image.</figcaption>
+        </figure>
+        <p>List of items:</p>
+        <ul>
+            <li>Unordered list item 1</li>
+            <li>Unordered list item 2
+                <ul>
+                    <li>Nested unordered list item</li>
+                </ul>
+            </li>
+            <li>Unordered list item 3</li>
+        </ul>
+        <p>Ordered list:</p>
+        <ol>
+            <li>Ordered list item 1</li>
+            <li>Ordered list item 2</li>
+            <li>Ordered list item 3</li>
+        </ol>
+        <blockquote cite="https://www.huxley.net/bnw/four.html">
+            <p>"Words can be like X-rays if you use them properly – they'll go through anything. You read and you're pierced."</p>
+            <footer>— Aldous Huxley, <cite>Brave New World</cite></footer>
+        </blockquote>
+    </article>
+
+    <!-- Section with Tables -->
+    <section id="table-section">
+        <h2>Section 2: Tables</h2>
+        <p>The following table lists some sample data:</p>
+        <table border="1">
+            <caption>Table 1: Sample Data</caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Occupation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alice</td>
+                    <td>30</td>
+                    <td>Engineer</td>
+                </tr>
+                <tr>
+                    <td>Bob</td>
+                    <td>25</td>
+                    <td>Designer</td>
+                </tr>
+                <tr>
+                    <td>Charlie</td>
+                    <td>35</td>
+                    <td>Teacher</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">End of Table</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <!-- Section with Forms -->
+    <section id="form-section">
+        <h2>Section 3: Forms</h2>
+        <form action="/submit" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname" value="John"><br><br>
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                <label for="country">Country:</label><br>
+                <select id="country" name="country">
+                    <option value="usa">United States</option>
+                    <option value="canada">Canada</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+                <input type="checkbox" id="subscribe" name="subscribe" value="newsletter">
+                <label for="subscribe"> Subscribe to newsletter</label><br><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </section>
+
+    <!-- Multimedia Content -->
+    <section>
+        <h2>Section 4: Multimedia</h2>
+        <p>Here's an embedded video:</p>
+        <video controls width="320" height="240">
+            <source src="movie.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>And an embedded audio clip:</p>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <!-- Semantic Elements -->
+    <section>
+        <h2>Section 5: Semantic Elements</h2>
+        <article>
+            <header>
+                <h3>Article Title</h3>
+                <p>By <span class="author">Author Name</span> on <time datetime="2023-10-01">October 1, 2023</time></p>
+            </header>
+            <p>This is an article section that uses semantic HTML5 elements.</p>
+            <footer>
+                <p>Tags: <a href="#tag1">#Sample</a>, <a href="#tag2">#HTML5</a></p>
+            </footer>
+        </article>
+        <aside>
+            <h4>Related Links</h4>
+            <ul>
+                <li><a href="https://developer.mozilla.org/">MDN Web Docs</a></li>
+                <li><a href="https://www.w3.org/">W3C</a></li>
+            </ul>
+        </aside>
+    </section>
+
+    <!-- Embedded Content -->
+    <section>
+        <h2>Section 6: Embedded Content</h2>
+        <p>An inline frame (iframe):</p>
+        <iframe src="https://www.example.com" title="Example Site" width="300" height="200">
+            <p>Your browser does not support iframes.</p>
+        </iframe>
+    </section>
+
+    <!-- Data Lists and Progress -->
+    <section>
+        <h2>Section 7: Interactive Elements</h2>
+        <p>Data list example:</p>
+        <label for="browser">Choose your browser from the list:</label>
+        <input list="browsers" id="browser" name="browser">
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Safari">
+            <option value="Edge">
+            <option value="Opera">
+        </datalist>
+        <p>Progress bar:</p>
+        <progress value="70" max="100">70%</progress>
+    </section>
+
+    <!-- Details and Summary -->
+    <section>
+        <h2>Section 8: Details and Summary</h2>
+        <details>
+            <summary>Click to expand</summary>
+            <p>This content is hidden by default and revealed when the user clicks the summary.</p>
+        </details>
+    </section>
+
+    <!-- MathML and SVG -->
+    <section>
+        <h2>Section 9: MathML and SVG</h2>
+        <p>Mathematical equation using MathML:</p>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>E</mi>
+            <mo>=</mo>
+            <mi>m</mi>
+            <msup>
+                <mi>c</mi>
+                <mn>2</mn>
+            </msup>
+        </math>
+        <p>Scalable Vector Graphics (SVG):</p>
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+            Sorry, your browser does not support inline SVG.
+        </svg>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+        <address>
+            Contact us at <a href="mailto:info@example.com">info@example.com</a>.
+        </address>
+    </footer>
+</body>
+</html>

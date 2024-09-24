@@ -1,8 +1,18 @@
 from .elements import Element,\
-    Text,\
-    Title,\
-    List,\
-    Table,\
-    Link
+    TextElement,\
+    TitleElement,\
+    ListElement,\
+    TableElement,\
+    LinkElement
+from .metadata import Metadata
 
-__all__ = ['Element', 'Text', 'Title', 'List', 'Table', 'Link']
+
+__all__ = [
+    'Element', 
+    'TextElement', 
+    'TitleElement', 
+    'ListElement', 
+    'TableElement', 
+    'LinkElement', 
+    'Metadata'
+]
